@@ -1,0 +1,93 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Entrar";
+}
+
+<div class="container-fluid p-0 rounded-3">
+    <div class="d-flex flex-column flex-md-row min-vh-100 rounded-3">
+
+        <div class="col-md-6 d-none d-md-flex align-items-end text-white position-relative login-left">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-success bg-opacity-10"></div>
+            <div class="login-left-content position-relative p-5">
+                <h2 class="fw-semibold fs-2">Cuide da sua saúde com praticidade</h2>
+                <p class="text-light">Agende suas consultas e acompanhe seus horários em um só lugar.</p>
+            </div>
+        </div>
+
+
+        <div class="col-md-6 d-flex align-items-center justify-content-center bg-white p-4 p-md-5 shadow-sm">
+            <div class="login-form w-100" style="max-width: 380px;">
+                <h2 class="fw-bold text-Dark mb-1">Bem-vindo de volta!</h2>
+                <small class="text-secondary">Entre para acessar sua agenda médica</small>
+
+                <form id="account" method="post" class="mt-4">
+                    <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+
+                    <div class="form-floating mb-3 border border-dark rounded-3">
+                        <input asp-for="Input.Email" class="form-control" placeholder="name@example.com" />
+                        <label asp-for="Input.Email">Email</label>
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-floating mb-3 border border-dark rounded-3">
+                        <input asp-for="Input.Password" type="password" class="form-control" placeholder="Senha" />
+                        <label asp-for="Input.Password">Senha</label>
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" asp-for="Input.RememberMe" />
+                            <label class="form-check-label text-dark" asp-for="Input.RememberMe">
+                                Lembrar-me
+                            </label>
+                        </div>
+                        <a asp-page="./ForgotPassword" class="text-muted small">Esqueceu a senha?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-dark w-100 py-2 fw-semibold">
+                        Entrar
+                    </button>
+
+                    <div class="text-center mt-3 small">
+                        Não tem uma conta?
+                        <a asp-page="./Register" class="text-primary fw-semibold text-decoration-none">Cadastre-se</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f5f8fb;
+    }
+
+    .login-left {
+        background: url('/img/medical-bg.jpg') no-repeat center center;
+        background-size: cover;
+
+    }
+
+    .form-control {
+        border-radius: 10px !important;
+    }
+
+    .btn-primary {
+        background-color: #0f57b1;
+        border-color: #0f57b1;
+    }
+
+        .btn-primary:hover {
+            background-color: #0c4590;
+            border-color: #0c4590;
+        }
+</style>
