@@ -36,4 +36,4 @@ Todos os ajustes de estrutura, espaçamento, tipografia e responsividade foram f
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/ColgateTotal12632/https://github.com/ColgateTotal12632/AgendaMedica.git
+   git clone https://github.com/ColgateTotal12632/AgendaMedica.git
