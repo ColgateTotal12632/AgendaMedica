@@ -1,38 +1,42 @@
-# 🖥️ Login Page - Layout Adaptado do Dribbble
+🖥️ **Login Page - Layout Inspirado no Dribbble**
 
-Este projeto é uma **adaptação visual** de um layout encontrado no [Dribbble](https://dribbble.com/), implementado dentro de uma aplicação **ASP.NET MVC**.  
-O objetivo foi aplicar o design moderno e responsivo do conceito original à estrutura de login existente no meu projeto.
-
----
-
-## 🎯 Objetivo
-
-O foco deste trabalho foi **modernizar a interface de login** utilizando princípios de **UI/UX** e boas práticas de **HTML, CSS e Razor**.  
-O resultado mantém a lógica original do login, mas com uma **aparência mais limpa, fluida e profissional**.
+Este projeto apresenta a **adaptação visual** de um layout encontrado no **Dribbble**, implementado dentro de uma aplicação **ASP.NET MVC 8**.  
+O objetivo foi aplicar um **design moderno e responsivo** ao sistema existente, aprimorando a experiência do usuário sem alterar a lógica de autenticação original.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+🎯 **Objetivo**
 
-- **ASP.NET MVC 8 / .NET Core MVC**
-- **HTML5**  
-- **CSS3** (layout responsivo)
-- **Bootstrap** *(opcional, se usado no layout)*
-- **Google Fonts (Roboto)**  
-- **Font Awesome / SVG Icons** *(se aplicável)*
+Modernizar a interface de **Login** (e Registro, se aplicável), aplicando princípios de **UI/UX**, **HTML semântico**, **CSS responsivo** e **boas práticas de design**.  
+O resultado é uma interface mais **limpa, fluida e profissional**, mantendo o funcionamento original do backend.
 
 ---
 
-## 🎨 Design Base
+🛠️ **Tecnologias Utilizadas**
 
-O design original foi inspirado em um layout publicado no **Dribbble**, servindo apenas como **referência visual**.  
-Todos os ajustes de estrutura, espaçamento, tipografia e responsividade foram feitos manualmente para se adequar ao meu projeto MVC.
-
-> ⚠️ O design é apenas uma *inspiração visual* — não há reprodução de código do Dribbble.
+- ASP.NET MVC 8 / .NET Core  
+- HTML5  
+- CSS3 (layout responsivo)  
+- Bootstrap *(opcional, caso utilizado)*   
+- Google Fonts *(ex: Montserrat)*  
+- Font Awesome / SVG Icons *(se aplicável)*  
 
 ---
 
-## 🚀 Como Executar
+🎨 **Design de Referência**
+
+O design foi **inspirado** em um layout publicado no **Dribbble**, servindo **apenas como referência visual**.  
+Todos os ajustes de espaçamento, cores, tipografia e estrutura foram feitos manualmente para se adequar à arquitetura do projeto MVC.
+
+> ⚠️ O design é apenas uma **inspiração visual** — **nenhum código** foi copiado da referência.
+
+📎 **Link da inspiração:**  
+https://dribbble.com/shots/26065003-Real-estate-website-login-page-UI
+https://dribbble.com/shots/20330398-Case-study-Sign-up-form
+
+---
+
+🚀 **Como Executar o Projeto**
 
 1. Clone este repositório:
    ```bash
