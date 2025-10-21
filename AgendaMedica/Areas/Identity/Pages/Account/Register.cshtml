@@ -7,56 +7,56 @@
 <div class="container-fluid p-0">
     <div class="row min-vh-100 g-0">
 
-        <div class="col-md-6 d-flex align-items-center justify-content-center bg-white p-5">
+        <div class="col-md-6 d-flex align-items-center justify-content-center bg-dark p-5 card shadow-lg">
             <div class="w-100" style="max-width: 380px;">
-                <h2 class="fw-bold mb-2 text-center text-dark">Cadastro</h2>
-
+                <h2 class="fw-bold mb-2 text-center text-white">Cadastro</h2>
 
                 <form method="post" asp-action="SignUp">
                     <div class="mb-3">
-                        <label for="email" class="form-label fw-semibold small text-muted">Email</label>
-                        <input type="email" class="form-control border-secondary-subtle" id="email" name="Email" placeholder="Insira seu Email" required>
+                        <label for="email" class="form-label fw-semibold small text-light">Email</label>
+                        <input type="email" class="form-control border-secondary bg-dark text-white" id="email" name="Email" placeholder="Insira seu Email" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="password" class="form-label fw-semibold small text-muted">Senha</label>
-                        <input type="password" class="form-control border-secondary-subtle" id="password" name="Password" placeholder="Insira sua Senha" required>
+                        <label for="password" class="form-label fw-semibold small text-light">Senha</label>
+                        <input type="password" class="form-control border-secondary bg-dark text-white" id="password" name="Password" placeholder="Insira sua Senha" required>
                     </div>
 
                     <div class="mb-4">
-                        <label for="confirmPassword" class="form-label fw-semibold small text-muted">Confirmar Senha</label>
-                        <input type="password" class="form-control border-secondary-subtle" id="confirmPassword" name="ConfirmPassword" placeholder="Confirmar sua Senha" required>
+                        <label for="confirmPassword" class="form-label fw-semibold small text-light">Confirmar Senha</label>
+                        <input type="password" class="form-control border-secondary bg-dark text-white" id="confirmPassword" name="ConfirmPassword" placeholder="Confirmar sua Senha" required>
                     </div>
 
                     <button type="submit" class="btn btn-primary w-100 fw-semibold py-2">Cadastrar</button>
 
-                    <p class="text-center mt-3 mb-0 text-muted">
+                    <p class="text-center mt-3 mb-0 text-light">
                         Já tem uma conta?
-                        <a asp-page="./Login" class="text-decoration-none fw-semibold text-primary">Login</a>
+                        <a asp-page="./Login" class="text-decoration-none fw-semibold text-info">Login</a>
                     </p>
                 </form>
 
-                <div class="text-center my-3 text-muted">or</div>
+                <div class="text-center my-3 text-secondary">ou</div>
 
                 <div class="d-grid gap-2">
-                    <button type="button" class="btn btn-outline-dark">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/google.svg" width="18" class="me-2" />
+                    <button type="button" class="btn btn-outline-light">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/google.svg" width="18" class="me-2 icon-white" />
                         Cadastrar com o Google
                     </button>
-                    <button type="button" class="btn btn-outline-dark">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" width="18" class="me-2" />
+                    <button type="button" class="btn btn-outline-light">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" width="18" class="me-2 icon-white" />
                         Cadastrar com o Facebook
                     </button>
-                    <button type="button" class="btn btn-outline-dark">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" width="18" class="me-2" />
+                    <button type="button" class="btn btn-outline-light">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" width="18" class="me-2 icon-white" />
                         Cadastrar com o Twitter
                     </button>
                 </div>
+
             </div>
         </div>
 
-        <div class="col-md-6 d-none d-md-flex align-items-center justify-content-center bg-light">
-            <img src="~/img/Medico-cuidar-da-sua-imagem-e-fundamental.jpg"
+        <div class="col-md-6 d-none d-md-flex align-items-center justify-content-center bg-black">
+            <img src="~/img/medico.jpg"
                  alt="Sign up illustration"
                  class="img-fluid rounded-end-3"
                  style="object-fit: cover; height: 100vh; width: 100%;">
@@ -64,7 +64,61 @@
     </div>
 </div>
 
-
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+
+<style>
+    body {
+        background-color: #181a1b;
+        font-family: 'Poppins', sans-serif;
+    }
+    .form-control {
+        border-radius: 10px !important;
+        background-color: #23272b !important;
+        color: #fff !important;
+        border-color: #444 !important;
+    }
+    .form-control:focus {
+        background-color: #23272b !important;
+        color: #fff !important;
+        border-color: #0d6efd !important;
+        box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
+    }
+    .btn-primary {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+    }
+    .btn-primary:hover {
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+    }
+    .btn-outline-light {
+        border-color: #fff !important;
+        color: #fff !important;
+    }
+    .btn-outline-light:hover {
+        background-color: #fff !important;
+        color: #181a1b !important;
+    }
+    .text-info {
+        color: #0dcaf0 !important;
+    }
+
+    .icon-white {
+        filter: invert(1) brightness(2);
+    }
+
+    .icon-white {
+        filter: invert(1) brightness(2);
+        transition: filter 0.2s;
+    }
+
+    .btn-outline-light:hover .icon-white,
+    .btn-outline-light:focus .icon-white,
+    .btn-outline-light:active .icon-white {
+        filter: none;
+    }
+
+
+</style>
